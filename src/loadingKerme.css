@@ -1,0 +1,44 @@
+.modal-loading {
+  background-color: white;
+  width: 30rem;
+  height: auto;
+  border-radius: 1rem;
+}
+.modal-loading__loading {
+  position: relative;
+}
+.modal-loading__header {
+  border-bottom: 0.1rem solid black;
+  font-size: 1.2rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  padding: 0.6rem 1rem;
+}
+.modal-loading__spinner {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0rem;
+  animation: girar 5s infinite linear;
+}
+.sppiner__spinner {
+  width: 16rem;
+  height: auto;
+}
+@keyframes girar {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.modal-loading__logo {
+  width: 6rem;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
